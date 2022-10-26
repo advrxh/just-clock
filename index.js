@@ -24,9 +24,11 @@ function currentTime() {
     mm = mm < 10 ? "0" + mm : mm;
     ss = ss < 10 ? "0" + ss : ss;
 
-    let time = hh + " : " + mm + " : " + ss + " - " + session;
+    let time = hh + " : " + mm + " : " + ss;
 
     document.getElementById("clock").innerText = time;
+    document.getElementById("session").innerText = session;
+    
 
     var t = setTimeout(function () {
         currentTime();
