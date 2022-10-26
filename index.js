@@ -25,7 +25,6 @@ function currentTime() {
     ss = ss < 10 ? "0" + ss : ss;
 
     let time = hh + " : " + mm + " : " + ss + " - " + session;
-    console.log(time);
 
     document.getElementById("clock").innerText = time;
 
