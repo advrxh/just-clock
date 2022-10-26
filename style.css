@@ -5,7 +5,8 @@ html{
     font-family: 'Roboto Mono', monospace;
 }
 :root{
-    --fs: 128px
+    --fs: 100px;
+    --sesfs: 80px;
 }
 #container {
     width: 100%;
@@ -13,11 +14,17 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-#clock {
+#clock, #session{
     text-align: center;
     font-weight: bold;
     color:white;
-    font-size: var(--fs)
+    font-size: var(--fs);
+    margin: 10px;
+}
+
+#session {
+    font-size: var(--sesfs);
 }
