@@ -35,4 +35,5 @@ function currentTime() {
     }, 1000);
 }
 
+// start the loop function
 currentTime();
